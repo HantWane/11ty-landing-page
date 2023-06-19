@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+   <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+   <h1>Belmond</h1>
+   
+   
+   
+   
+   <a id="liveagent_button_online_5737Q000000Ys1g" href="javascript://Chat" style="display: none;" onclick="liveagent.startChat('5737Q000000Ys1g')"><!-- Online Chat Content --></a><div id="liveagent_button_offline_5737Q000000Ys1g" style="display: none;"><!-- Offline Chat Content --></div><script type="text/javascript">
+if (!window._laq) { window._laq = []; }
+window._laq.push(function(){liveagent.showWhenOnline('5737Q000000Ys1g', document.getElementById('liveagent_button_online_5737Q000000Ys1g'));
+liveagent.showWhenOffline('5737Q000000Ys1g', document.getElementById('liveagent_button_offline_5737Q000000Ys1g'));
+});</script>
+
+   
+   <script type='text/javascript' src='https://service.force.com/embeddedservice/menu/fab.min.js'></script>
+<script type='text/javascript'>
+	var initESW = function(gslbBaseURL) {
+		// Required if you want labels in a language that’s different from your user’s context.
+		//embedded_svc.menu.settings.language = ''; //For example, enter 'en' or 'en-US'
+		// Please enter the URL of your website and the name of Channel Menu in Salesforce
+		embedded_svc.menu.init(
+			'file:///C:/Users/VO2GROUP/Documents/Premierprojet/BelmondChat.html',
+			'https://d.la2-c1cs-cdg.salesforceliveagent.com/chat',
+			gslbBaseURL,
+			'00D3O0000006Ehr',
+			'MyAccount_Chat'
+		);
+	};
+
+	if (!window.embedded_svc || !window.embedded_svc.menu) {
+		var s = document.createElement('script');
+		s.setAttribute('src', 'https://belmond--devomni.sandbox.my.salesforce.com/embeddedservice/menu/fab.min.js');
+		s.onload = function() {
+			initESW(null);
+		};
+		document.body.appendChild(s);
+	} else {
+		initESW('https://service.force.com');
+	}
+</script>
+
+</body>
+</html>
